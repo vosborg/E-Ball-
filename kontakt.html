@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+   <!-- Nødvendige meta tags --> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!--Meta description som kommer frem under når man søger på google, samt hjælper til CEO optimering-->
+    <meta name="description" content="Har du et spørgsmål? En forespørgsel? Eller noget som helst andet, så er du velkommen til at kontakte os her.">
+    
+    <!-- Sidens titel --> 
+    <title>Kontakt os</title>
+    
+	<!-- Fane blad icon -->
+	<link rel="shortcut icon" type="image/png" href="logo/CEA-logo.png">
+    
+    <!-- Bootstrap CSS --> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <!-- Stylesheet --> 
+    <link href="style.css" rel="stylesheet">
+    
+    
+    <!-- Font-family fra Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+    
+    <!-- Fontawesome er brugt til at hente ikoner til sociale medier -->
+    <script src="https://kit.fontawesome.com/a944cea46b.js" crossorigin="anonymous"></script>
+     
+    <!-- Bootstrap link for at burger-menu skal aktiveres, uden dette link kan man ikke få burger-menu til at dropdown, samt jquery link som også er en nødvendighed for burger-menu. Jquery link skal placeres før bootstrap ellers fungere det ikke. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <!-- TweenMax er et js bibliotek som giver muligheden for at animere enhver egenskab ved et objekt som js kan røre ved -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>    
+</head>
+<body>
+    
+      
+         <!-- Reponsive navigation bar via bootstrap --> 
+    <nav class="navbar navbar-default navbar-fixed-top">
+       <!-- .container-fluid ændrer sig kontinuerligt, når du ændrer bredden på dit vindue / browser.-->
+        <div class="container-fluid">
+           <!-- Navbar class gør i dette tilfælde at der kommer en tynd streg som adskiller drop down når man trykker på den --> 
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main">
+                   <!-- Dette gør at man får burger-menuen frem når vinduet bliver mindre. Span er det icon der kommer frem, det vil sige 3 span class er = 3 iconer i burger-menuen --> 
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- Navbar/Header logo --> 
+                <a class="navbar-brand" href="index.html"><img src="logo/CEA-logo.png" alt="Fodbold-logo"></a>
+            </div>
+            <!-- Collapse navbar, samt navbar.--> 
+            <div class="collapse navbar-collapse" id="navbar-collapse-main">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="line-effect" href="index.html">Forside</a></li>
+                    <!-- Dropdown under træning. --> 
+                    <li class="dropdown">
+                        <a class="dropbtn line-effect" href="begyndere.html">Tutorials</a>
+                        <div class="dropdown-content">
+                            <a class="line-effect" href="begyndere.html">Begynder</a>
+                            <a class="line-effect" href="oevet.html">Øvet</a>
+                            <a class="line-effect" href="avanceret.html">Avanceret</a>
+                        </div>
+                    <li><a class="line-effect" href="om.html">Om</a></li>
+                    <li><a href="kontakt.html" class="active">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>    
+    </nav>
+           
+            
+  <div class="baggrund-tutorials">             
+
+ <!-- Kontakt sides indhold begynder her, med en overordnet "section" omkring alt indholdet -->
+    <section class="contact" id="contact">
+       <!-- her laves der en div container til at indholdet, så det er lettere at rykke rundt på --> 
+        <div class="container">
+           <!-- overskriften på siden, samt tekst under overskriften --> 
+            <div class="heading text-center">
+                <h1>Kontakt os 
+                </h1>
+                <span class="border-center"></span>
+            
+                   <!-- Brødtekst under heading text --> 
+                    <p>I er meget velkommen til at tage kontakt hvis i er i tvivl eller har nogen spørgsmål.
+                        <br>Vi svarer tilbage indenfor 24 timer.</p>
+                <!-- Her har vi givet hele formen 7 koloner når den er over md-breakpoint, så den fylder lidt mere end kontakt detaljer. -->   
+                <div class="col-md-7">
+                    <form>
+                        <!-- Her har vi givet formen en row for at holde styr på layoutet bedre. --> 
+                        <div class="row">
+                           <!-- Vi har opdelt de 2 første klasser så de fylder 6 col inde i den overordnet row, når den er over sm-breakpoint, når den kommer under sm-breakpoint så fylder hvert element 12 col -->
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" placeholder="NAVN">
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="email" class="form-control" placeholder="EMAIL">
+                            </div>
+                            <div class="col-sm-12">
+                                <input type="text" class="form-control" placeholder="EMNE">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="5" id="comment" placeholder="BESKED"></textarea>
+                        </div>
+                        <button class="btn btn-block" type="submit">SEND BESKED</button>
+                    </form>
+                </div>
+            </div>
+            <!-- Layout til hvordan elementerne placeres, alt indsættes i en row først --> 
+            <div class="row">
+               <!-- Her har vi givet kontakt detajler col-md-5 da kontakt detajler skal fylde mindre på siden.  --> 
+                <div class="col-md-5">
+                    <div class="title">
+                        <h3>Kontakt detajler :</h3>
+                        <p>Yderligere detajler; i er mere end velkommen til at ringe til os. </p>
+                    </div>
+                    <div class="content">
+                        <!-- Information-1 -->
+                        <div class="info">
+                            <h4 class="d-inline-block">Telefon nummer : 
+                                <br>
+                                <span>+ 45 40 22 24 58</span></h4>
+                        </div>
+                        <!-- Information-2 -->
+                        <div class="info">
+                            <h4 class="d-inline-block">E-mail :
+                                <br>
+                                <span>info@CEA.dk</span></h4>
+                        </div>
+                        <!-- Information-3 -->
+                        <div class="info">
+                            <h4 class="d-inline-block">Sociale medier : <br></h4> 
+                        </div>
+                        <!-- Sociale medier : SO-ME --> 
+                        <div class="so-me">
+                            <a href="https://www.instagram.com/copenhagen_ea/?hl=da" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/channel/UCSMuVEZPNGYDC57jypgmgGA" target="_blank"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+</div>
+    <!-- Kontakt formular færdiggjort -->    
+           
+          
+           <!-- Footer begyndelse --> 
+   <footer>
+        <!-- Footer begynder --> 
+         <div class="footer-top">
+            <!-- Container til alt indhold --> 
+             <div class="container">
+                <!-- Footer layout en row = 12 col -->  
+                 <div class="row">
+                    <!-- De forskellige breakpoints er givet for at gøre den responsiv --> 
+                     <div class="col-md-3 col-sm-6 col-xs-12 sektion-1">
+                         <h3>COPENHAGEN <br> E-BALL ACADEMY</h3>
+                         <p>Fodbold er en af de ting der altid kan forbedres, uanset ens niveau. Find de tutorials der passer dit fodbold niveau. Svedig skudtræning og frække finter er i  blandt de fodbold tutorials du  finder her på siden.</p>
+                     </div>
+
+                    <!-- Responsiv --> 
+                     <div class="col-md-6 col-sm-6 col-xs-12 sektion-2">
+                         <img src="logo/CEA-logo.png" alt="Logo" height="200" width="200">
+                     </div>
+
+                    <!-- Responsiv --> 
+                     <div class="col-md-3 col-sm-6 col-xs-12 sektion-3">
+                     <h2>Vores nyhedsbrev</h2>
+                     <p>Tryk her for at tilmelde dig vores nyhedsbrev, og gå aldrig glip af en ny fodbold tutorial igen.</p>
+                     
+                     <!-- Nyhedsbrev --> 
+                     <form>
+                         <input type="email" placeholder="E-mail">
+                         <input type="submit" value="TILMELD">
+                     </form>
+                     <br>
+                     
+                     <!-- Sociale medier i footeren, SO-ME --> 
+                     <div class="so-me">
+                            <a href="https://www.instagram.com/copenhagen_ea/?hl=da" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/channel/UCSMuVEZPNGYDC57jypgmgGA" target="_blank"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <!-- Bottom footer med copyrights samt brand navn --> 
+         <div class="footer-bottom-text"><span> &copy; 2020 COPENHAGEN E-BALL ACADEMY | All Rights Reserved</span></div>
+     </footer>
+    <!-- Overall footer slut --> 
+    
+</body>
+</html>

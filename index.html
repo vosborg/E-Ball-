@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+   <!-- Nødvendige meta tags --> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!--Meta description som kommer frem under når man søger på google, samt hjælper til CEO optimering-->
+    <meta name="description" content="Kan du lide fodbold? Her på siden kan du finde tutorials om fodbold. En guide til hvordan du kan forbedre dig på fodboldbanen.">
+    
+    <!-- Sidens titel --> 
+    <title>Copenhagen E-ball Academy</title>
+    
+	<!-- Fane blad icon -->
+	<link rel="shortcut icon" type="image/png" href="logo/CEA-logo.png">
+    
+    <!-- Bootstrap CSS --> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <!-- Stylesheet --> 
+    <link href="style.css" rel="stylesheet">
+    
+    
+    <!-- Font-family fra Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+    
+    <!-- Fontawesome er brugt til at hente ikoner til sociale medier -->
+    <script src="https://kit.fontawesome.com/a944cea46b.js" crossorigin="anonymous"></script>
+     
+    <!-- Bootstrap link for at burger-menu skal aktiveres, uden dette link kan man ikke få burger-menu til at dropdown, samt jquery link som også er en nødvendighed for burger-menu. Jquery link skal placeres før bootstrap ellers fungere det ikke. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <!-- TweenMax er et js bibliotek som giver muligheden for at animere enhver egenskab ved et objekt som js kan røre ved -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>    
+</head>
+<body>
+    
+   <div class="wrapper">
+            <div class="pattern"></div>
+                       
+                       
+         <!-- Reponsive navigation bar via bootstrap --> 
+    <nav class="navbar navbar-default navbar-fixed-top">
+       <!-- .container-fluid ændrer sig kontinuerligt, når du ændrer bredden på dit vindue / browser.-->
+        <div class="container-fluid">
+           <!-- Navbar class gør i dette tilfælde at der kommer en tynd streg som adskiller drop down når man trykker på den --> 
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main">
+                   <!-- Dette gør at man får burger-menuen frem når vinduet bliver mindre. Span er det icon der kommer frem, det vil sige 3 span class er = 3 iconer i burger-menuen --> 
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- Navbar/Header logo --> 
+                <a class="navbar-brand" href="index.html"><img src="logo/CEA-logo.png" alt="Fodbold-logo"></a>
+            </div>
+            <!-- Collapse navbar, samt navbar.--> 
+            <div class="collapse navbar-collapse" id="navbar-collapse-main">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="active" href="index.html">Forside</a></li>
+                    <!-- Dropdown under træning. --> 
+                    <li class="dropdown">
+                        <a class="dropbtn line-effect" href="begyndere.html">Tutorials</a>
+                        <div class="dropdown-content">
+                            <a class="line-effect" href="begyndere.html">Begynder</a>
+                            <a class="line-effect" href="oevet.html">Øvet</a>
+                            <a class="line-effect" href="avanceret.html">Avanceret</a>
+                        </div>
+                    <li><a class="line-effect" href="om.html">Om</a></li>
+                    <li><a href="kontakt.html" class="line-effect">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>    
+    </nav>
+           
+            
+            
+        
+           <!-- Firkante der kommer ind i billedet --> 
+            <div class="firkant-1 box"></div>
+            <div class="firkant-2 box"></div>
+            <div class="firkant-3 box"></div>
+
+            <div class="forside-titel-2">FOR ALL</div>
+
+            <div class="filip-forside">
+                  <img src="forside-billeder/filip-forside.png" alt="Et billede af en fodboldspiller som er i gang med at sparke fodbolden">
+            </div>
+
+            <div class="forside-titel-1">E-BALL</div>
+
+            <div class="knap-tut">
+                 
+
+                  <button class="forside-button" onclick="location.href='begyndere.html';">START DIN TRÆNING</button>
+            </div>
+            
+             <div class="fodbold">
+                <img src="forside-billeder/fodbold.png" alt="Et billede af en gul og blå fodbold">
+            </div>  
+      </div>
+      
+          
+          
+     <!-- Content under forsiden --> 
+     
+<div class="lower-baggrund">
+     
+        <div class="container broedtext">
+     
+     <h1 class="text-center">FODBOLD TUTORIALS LEVERET MED <br>NÆRVÆR FOR SKILLS OG TRÆNING</h1>
+           
+            <div class="row align-self-center">
+        
+           
+        <div class="col-sm-6 col-md-6 align-self-center">
+            <h2 class="text-center">
+                Træningsplatform for fodboldspillere
+            </h2>
+            
+            <p>
+        Vi er tre unge fyre fra Copenhagen E-ball Academy. Efter at have interesseret os for video editing, design, teknologi og sport i over halvdelen af vores liv, har vi valgt at sammensætte alt i en. Vores lidenskab er at inspirerer folk med vores færdigheder. Her på siden finder du en guide til hvordan du bliver bedre til fodbold, en siden med opdatering ugenligt. Vi tilbyder fodbold tutorials for alle som har lyst til at lære. CEA er et website som er gratis for alle. Ønsker du at lære nogen nye tricks som kan imponere dine venner eller måske en helt anden, er du kommet til det rette sted. For at opnå dette, arbejder vi hårdt hver dag. Vi filmer og redigere jævnligt. CEA skal være nem at tilgå, derfor uploader vi også videoer til vores Instagram og YouTube løbende. Vi er ivrige efter at guide dig til at blive en bedre fodboldspiller. E-ball For All!
+            </p>
+        </div>
+            
+            
+                <div class="col-sm-6 col-md-6 align-self-center">
+                    <img src="forside-billeder/forside-billede-2.jpg" alt="">
+                </div>
+             </div>
+        </div> 
+    
+    
+    <div class="col-md-12 text-center tre-overskrift">
+        <h1>Fodbold tutorials og skills i alle niveauer, her <br>finder du noget der ligger lige til <i> <span style="color: #fdd228">dit</span></i> højreben</h1>
+    </div>
+    
+    <!-- Tutorials bokse nederst --> 
+    
+    <div class="container tre-tutorials">
+       
+        <div class="row align-self-center">
+            
+            
+            <div class="col-md-4">
+            <div class="col-md-12 skill-niveau text-center">
+               <img src="forside-billeder/Begynder.png" alt="">
+                <h4>Begyndere</h4>
+                    <p>Er du også lige begyndt med at spille fodbold og kunne tænke dig at lære nogle basale tricks, så er disse begynder tutorials lige noget for dig.</p>
+                    <br>
+                <button class="skill-button" onclick="location.href='begyndere.html';">SE MERE</button>
+            </div>
+            </div>
+            
+            <div class="col-md-4">
+            <div class="col-md-12 skill-niveau text-center">
+               <img src="forside-billeder/oevet.png" alt="">
+                <h4>Øvet</h4>
+                    <p>Bliver du heller ikke udfordret nok i vores begynder tutorials, så er disse tutorials lige noget for dig. Føler du dig øvet, så tag skridtet til et højere niveau.</p>
+                    <br>
+                <button class="skill-button" onclick="location.href='oevet.html';">SE MERE</button>
+            </div>
+            </div>
+            
+            <div class="col-md-4">
+            <div class="col-md-12 skill-niveau text-center">
+               <img src="forside-billeder/Avanceret.png" alt="">
+                <h4>Avanceret</h4>
+                    <p>Føler du dig motiveret og klar til at være i blandt de bedste af de aller bedste, så tjek vores avancerede tutorials ud hvor du lære de mest finurlige finter.
+                    </p>
+                    <br>
+                <button class="skill-button" onclick="location.href='avanceret.html';">SE MERE</button>
+            </div>
+            </div>
+        </div>
+    </div> 
+</div>
+          
+          
+          
+          
+<div class="divider-forside"></div>
+          
+            
+          
+          
+           <!-- Footer begyndelse --> 
+   <footer>
+        <!-- Footer begynder --> 
+         <div class="footer-top">
+            <!-- Container til alt indhold --> 
+             <div class="container">
+                <!-- Footer layout en row = 12 col -->  
+                 <div class="row">
+                    <!-- De forskellige breakpoints er givet for at gøre den responsiv --> 
+                     <div class="col-md-3 col-sm-6 col-xs-12 sektion-1">
+                         <h3>COPENHAGEN <br> E-BALL ACADEMY</h3>
+                         <p>Fodbold er en af de ting der altid kan forbedres, uanset ens niveau. Find de tutorials der passer dit fodbold niveau. Svedig skudtræning og frække finter er i  blandt de fodbold tutorials du  finder her på siden.</p>
+                     </div>
+
+                    <!-- Responsiv --> 
+                     <div class="col-md-6 col-sm-6 col-xs-12 sektion-2">
+                         <img src="logo/CEA-logo.png" alt="Logo" height="200" width="200">
+                     </div>
+
+                    <!-- Responsiv --> 
+                     <div class="col-md-3 col-sm-6 col-xs-12 sektion-3">
+                     <h2>Vores nyhedsbrev</h2>
+                     <p>Tryk her for at tilmelde dig vores nyhedsbrev, og gå aldrig glip af en ny fodbold tutorial igen.</p>
+                     
+                     <!-- Nyhedsbrev --> 
+                     <form>
+                         <input type="email" placeholder="E-mail">
+                         <input type="submit" value="TILMELD">
+                     </form>
+                     <br>
+                     
+                     <!-- Sociale medier i footeren, SO-ME --> 
+                     <div class="so-me">
+                            <a href="https://www.instagram.com/copenhagen_ea/?hl=da" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/channel/UCSMuVEZPNGYDC57jypgmgGA" target="_blank"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <!-- Bottom footer med copyrights samt brand navn --> 
+         <div class="footer-bottom-text"><span> &copy; 2020 COPENHAGEN E-BALL ACADEMY | All Rights Reserved</span></div>
+     </footer>
+    <!-- Overall footer slut --> 
+          
+          
+          
+          
+          
+          
+          
+    <!-- TweenMax start, animationer til forsiden --> 
+    
+    <script>
+
+            TweenMax.to(".forside-titel-1", 2, {
+            x: 30,
+            opacity: 1,
+            ease: Expo.easeInOut
+            });
+
+            TweenMax.to(".forside-titel-2", 2, {
+            delay: 0.2,
+            x: -80,
+            opacity: 1,
+            ease: Expo.easeInOut
+            });
+
+            TweenMax.from(".filip-forside", 2, {
+            delay: 1.6,
+            x: -80,
+            opacity: 0,
+            ease: Expo.easeInOut
+            });
+
+            TweenMax.from(".firkant-1", 4, {
+            delay: 1,
+            rotation: 290,
+            opacity: 0,
+            x: -180,
+            ease: Expo.easeInOut
+            });
+
+            TweenMax.from(".firkant-2", 4, {
+            delay: 1.2,
+            rotation: 100,
+            opacity: 0,
+            x: -180,
+            ease: Expo.easeInOut
+            });
+
+            TweenMax.from(".firkant-3", 4, {
+            delay: 1,
+            rotation: 200,
+            opacity: 0,
+            x: -180,   
+            ease: Expo.easeInOut
+            });
+    
+            TweenMax.from(".navbar-brand", 2, {
+            delay: 1.6,
+            y: 20,
+            opacity: 0,
+            ease: Expo.easeInOut
+            });
+          
+          TweenMax.from(".navbar", 2, {
+            delay: 1.6,
+            y: -20,
+            opacity: 0,
+            ease: Expo.easeInOut
+            });
+
+            TweenMax.staggerFrom(".navbar ul li", 2, {
+            delay: 1.6,
+            y: 20,
+            opacity: 0,
+            ease: Expo.easeInOut
+      }, 0.1);
+            
+            TweenMax.from(".knap-tut button", 2, {
+            delay: 2.6,
+            y: 20,
+            opacity: 0,
+            ease: Expo.easeInOut
+            });
+          
+            TweenMax.from(".fodbold img", 4, {
+            delay: 1,
+            rotation: 290,
+            opacity: 0,
+            x: -100,
+            ease: Expo.easeInOut
+            });
+      </script>
+</body>
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+   <!-- Nødvendige meta tags --> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!--Meta description som kommer frem under når man søger på google, samt hjælper til CEO optimering-->
+    <meta name="description" content="Fodbold tutorials for avanceret. Skill videoer og træning i høj kvalitet, for de mest gavne på fodboldbanen.">
+    
+    <!-- Sidens titel --> 
+    <title>Fodbold tutorials for avancerede</title>
+    
+	<!-- Fane blad icon -->
+	<link rel="shortcut icon" type="image/png" href="logo/CEA-logo.png">
+    
+    <!-- Bootstrap CSS --> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <!-- Stylesheet --> 
+    <link href="style.css" rel="stylesheet">
+    
+    
+    <!-- Font-family fra Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+    
+    <!-- Fontawesome er brugt til at hente ikoner til sociale medier -->
+    <script src="https://kit.fontawesome.com/a944cea46b.js" crossorigin="anonymous"></script>
+     
+    <!-- Bootstrap link for at burger-menu skal aktiveres, uden dette link kan man ikke få burger-menu til at dropdown, samt jquery link som også er en nødvendighed for burger-menu. Jquery link skal placeres før bootstrap ellers fungere det ikke. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <!-- TweenMax er et js bibliotek som giver muligheden for at animere enhver egenskab ved et objekt som js kan røre ved -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>    
+</head>
+<body>
+    
+    
+           
+           
+         <!-- Reponsive navigation bar via bootstrap --> 
+    <nav class="navbar navbar-default navbar-fixed-top">
+       <!-- .container-fluid ændrer sig kontinuerligt, når du ændrer bredden på dit vindue / browser.-->
+        <div class="container-fluid">
+           <!-- Navbar class gør i dette tilfælde at der kommer en tynd streg som adskiller drop down når man trykker på den --> 
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main">
+                   <!-- Dette gør at man får burger-menuen frem når vinduet bliver mindre. Span er det icon der kommer frem, det vil sige 3 span class er = 3 iconer i burger-menuen --> 
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- Navbar/Header logo --> 
+                <a class="navbar-brand" href="index.html"><img src="logo/CEA-logo.png" alt="Fodbold-logo"></a>
+            </div>
+            <!-- Collapse navbar, samt navbar.--> 
+            <div class="collapse navbar-collapse" id="navbar-collapse-main">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="line-effect" href="index.html">Forside</a></li>
+                    <!-- Dropdown under træning. --> 
+                    <li class="dropdown">
+                        <a class="dropbtn line-effect active" href="begyndere.html">Tutorials</a>
+                        <div class="dropdown-content">
+                            <a class="line-effect" href="begyndere.html">Begynder</a>
+                            <a class="line-effect" href="oevet.html">Øvet</a>
+                            <a class="line-effect active" href="avanceret.html">Avanceret</a>
+                        </div>
+                    <li><a class="line-effect" href="om.html">Om</a></li>
+                    <li><a href="kontakt.html" class="line-effect">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>    
+    </nav>
+           
+            
+            
+<!-- Baggrunds billede til det første billede --> 
+
+<div class="baggrund-tutorials">
+
+    <div class="topbillede">
+        <div class="toptekst">
+            <h1>Fodbold tutorials for avancerede</h1>
+        </div>
+    </div>
+
+    <!-- Video 1 --> 
+    <div class="Tutorial-1">
+    
+        <video width="600" height="400" poster="tutorials-billeder/rainbowTHUMBB.PNG" id="TUT8" controls>
+            <source src="tutorial-video/Rainbow_DONE.mp4" type="video/mp4" alt="Fodbold tutorial video om the rainbow flick">
+        </video>
+    
+   </div>
+   
+   <!-- Figur med tekst til video 1 --> 
+    <div class="Tutorial-tekst1">
+        <h2>The Rainbow flick</h2>
+            <span class="understreg"></span>
+            <p>Rainbow flick er en af de mest ydmygende finter du kan lave på en fodboldbane. Hvis du gerne vil lære finten skal du se med her i vores fodbold tutorial hvor vi lære dig at udføre finten perfekt.</p>
+            <button onclick="openFullscreen('TUT8');" class="fullscreenbutton-1">SE TUTORIAL</button>
+    </div>
+
+
+    <!-- Video 2 --> 
+    <div class="Tutorial-2">
+    
+        <video width="600" height="400" poster="tutorials-billeder/flickTHUMBB.PNG" id="TUT9" controls>
+            <source src="tutorial-video/Flick_DONE.mp4" type="video/mp4" alt="Fodbold tutorial video om the flick">
+        </video>
+    
+    </div>
+   
+    <!-- Figur med tekst til video 2 --> 
+    <div class="Tutorial-tekst2">
+        <h2>The Flick</h2>
+            <span class="understreg"></span>
+            <p>The flick er en avanceret finte som er svær at udføre. Hvis du godt kunne tænke dig at lære the flick og udvide dine fodbold skills, skal du se vores tutorial video her. Enjoy!</p>
+            <button onclick="openFullscreen('TUT9');" class="fullscreenbutton-2">SE TUTORIAL</button>
+    </div>
+
+    <!-- Video 3 --> 
+    <div class="Tutorial-3">
+    
+        <video width="600" height="400" poster="tutorials-billeder/brVarTHUMBB.PNG" id="TUT10" controls>
+            <source src="tutorial-video/BrVAR_DONE.mp4" type="video/mp4" alt="Fodbold tutorial video om the ball roll variant">
+        </video>
+     
+    </div>
+   
+    <!-- Figur med tekst til video 3 -->
+    <div class="Tutorial-tekst3">
+        <h2>The ball roll variant</h2>
+            <span class="understreg"></span>
+            <p>Vi har massere af forskellige versioner af The Ball Roll. Denne version af Ball Roll er den mest avanceret og sværeste at udføre teknisk. Se vores tutorial om The Ball Roll Variant.</p>
+            <button onclick="openFullscreen('TUT10');" class="fullscreenbutton-1">SE TUTORIAL</button>
+    </div>
+
+
+    <!-- Vi har sat en div for at få lidt space mellem figur 3 og footer --> 
+    <div class="usynlig-div"></div>
+        
+</div>        
+           
+           
+      
+    <!-- Footer begyndelse --> 
+    <footer>
+        <!-- Footer begynder --> 
+         <div class="footer-top">
+            <!-- Container til alt indhold --> 
+             <div class="container">
+                <!-- Footer layout en row = 12 col -->  
+                 <div class="row">
+                    <!-- De forskellige breakpoints er givet for at gøre den responsiv --> 
+                     <div class="col-md-3 col-sm-6 col-xs-12 sektion-1">
+                         <h3>COPENHAGEN <br> E-BALL ACADEMY</h3>
+                         <p>Fodbold er en af de ting der altid kan forbedres, uanset ens niveau. Find de tutorials der passer dit fodbold niveau. Svedig skudtræning og frække finter er i  blandt de fodbold tutorials du  finder her på siden.</p>
+                     </div>
+
+                    <!-- Responsiv --> 
+                     <div class="col-md-6 col-sm-6 col-xs-12 sektion-2">
+                         <img src="logo/CEA-logo.png" alt="Logo" height="200" width="200">
+                     </div>
+
+                    <!-- Responsiv --> 
+                     <div class="col-md-3 col-sm-6 col-xs-12 sektion-3">
+                     <h2>Vores nyhedsbrev</h2>
+                     <p>Tryk her for at tilmelde dig vores nyhedsbrev, og gå aldrig glip af en ny fodbold tutorial igen.</p>
+                     
+                     <!-- Nyhedsbrev --> 
+                     <form>
+                         <input type="email" placeholder="E-mail">
+                         <input type="submit" value="TILMELD">
+                     </form>
+                     <br>
+                     
+                     <!-- Sociale medier i footeren, SO-ME --> 
+                     <div class="so-me">
+                            <a href="https://www.instagram.com/copenhagen_ea/?hl=da" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/channel/UCSMuVEZPNGYDC57jypgmgGA" target="_blank"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <!-- Bottom footer med copyrights samt brand navn --> 
+         <div class="footer-bottom-text"><span> &copy; 2020 COPENHAGEN E-BALL ACADEMY | All Rights Reserved</span></div>
+     </footer>
+    <!-- Overall footer slut --> 
+          
+          
+
+<script>
+    function openFullscreen(elem) {
+        var video = document.getElementById(elem)
+      if (video.requestFullscreen) {
+        video.requestFullscreen();
+      } else if (video.mozRequestFullScreen) { /* Firefox */
+        video.mozRequestFullScreen();
+      } else if (video.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+        video.webkitRequestFullscreen();
+      } else if (video.msRequestFullscreen) { /* IE/Edge */
+        video.msRequestFullscreen();
+      }
+    }
+</script>
+
+<script>
+   TweenMax.from(".Tutorial-1", 2, {
+            delay: 0.5,
+            rotation: 0,
+            opacity: 0,
+            x: -800,
+            ease: Expo.easeInOut
+            });
+   
+       TweenMax.from(".Tutorial-tekst1", 2, {
+            delay: 0.7,
+            rotation: 0,
+            opacity: 0,
+            x: 300,
+            ease: Expo.easeInOut
+            });
+   
+    TweenMax.from(".Tutorial-tekst2", 2, {
+            delay: 0.5,
+            rotation: 0,
+            opacity: 0,
+            x: -800,
+            ease: Expo.easeInOut
+            });
+   
+       TweenMax.from(".Tutorial-2", 2, {
+            delay: 0.7,
+            rotation: 0,
+            opacity: 0,
+            x: 300,
+            ease: Expo.easeInOut
+            });
+    
+    TweenMax.from(".Tutorial-3", 2, {
+            delay: 0.5,
+            rotation: 0,
+            opacity: 0,
+            x: -800,
+            ease: Expo.easeInOut
+            });
+   
+       TweenMax.from(".Tutorial-tekst3", 2, {
+            delay: 0.7,
+            rotation: 0,
+            opacity: 0,
+            x: 300,
+            ease: Expo.easeInOut
+            });
+    </script>
+</body>
+</html>
